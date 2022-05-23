@@ -1,0 +1,13 @@
+.login-form-font-header {
+    font-size:20px;
+    font-weight: bold;
+  }
+  
+  .login-form-font-header span {
+    color: black;
+  }
+
+  .btn-cerrar{
+    position: relative;
+    left: 70%;
+  }

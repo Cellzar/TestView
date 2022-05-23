@@ -1,0 +1,31 @@
+
+<div class="container">
+    <div class="row text-center login-page">
+      <div class="col-md-12 login-form" style="background-color: white;">
+              <div class="col-md-12 login-form-header">
+                 <p class="login-form-font-header"> <i class="fa-solid fa-book"></i> Test<span>APP</span><p>
+              </div>
+        <mat-card-content>
+          <form class="example-form">
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Usuario</mat-label>
+              <input matInput placeholder="usuario" [(ngModel)]="user.user"  name="user" value="c-sar-torres@hotmail.com">
+            </mat-form-field>
+  
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Contraseña</mat-label>
+              <input matInput type="password" [(ngModel)]="user.password" placeholder="contraseña" name="pass" value="4567237">
+            </mat-form-field>
+  
+            <mat-card-actions>
+              <button mat-raised-button color="primary" style="margin-left: 75%;" (click)="login()">Ingresar</button>
+            </mat-card-actions>
+          </form>
+  
+        </mat-card-content>
+        <br>
+    </div>
+  </div>
+  </div>
+
+  <div class="loader" *ngIf="loading"></div>

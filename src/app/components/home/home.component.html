@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Guardar Autores y libros</h2>
+                </div>
+                <div class="card-body">
+                    Para guardar todos los libros y autores de click
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary" (click)="save()">
+                        <i class="fa fa-save"></i>
+                        Guardar Libros y autores</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="loader" *ngIf="loading"></div>
